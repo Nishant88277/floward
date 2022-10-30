@@ -3,6 +3,8 @@ import {useNavigate} from 'react-router-dom';
 import Input from "../components/Input"
 import Button from "../components/Button"
 import {useLoginFormValidator} from "../utils/useLoginFormValidator";
+import {toast, ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // --redux
 import {connect} from "react-redux";
@@ -49,6 +51,11 @@ function Login({login, data, handleStatus}) {
         if(data.token) {
             navigate('/')
             handleStatus(true)
+        } else{
+            toast.error(data?.response?.data?.error || "something went wrong", {
+                hideProgressBar: true,
+                autoClose: 3000
+            })
         }
     }, [data])
 
@@ -79,6 +86,7 @@ function Login({login, data, handleStatus}) {
                 </form>
             </div>
         </div>
+        <ToastContainer />
     </div>
   )
 }
