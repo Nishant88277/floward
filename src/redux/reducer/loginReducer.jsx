@@ -1,4 +1,4 @@
-import {LOGIN, LOGIN_FAILURE, LOGIN_SUCCESS} from "../Constants";
+import {LOGIN, LOGIN_FAILURE, LOGIN_SUCCESS} from "../constants";
 
 const init = {
     email: [],
