@@ -1,4 +1,4 @@
-import {DETAIL, DETAIL_FAILURE, DETAIL_SUCCESS} from "../Constants";
+import {DETAIL, DETAIL_FAILURE, DETAIL_SUCCESS} from "../constants";
 
 const init = {
     code: {},

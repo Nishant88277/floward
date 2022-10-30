@@ -1,4 +1,4 @@
-import {LISTING, LISTING_FAILURE, LISTING_SUCCESS} from "../Constants";
+import {LISTING, LISTING_FAILURE, LISTING_SUCCESS} from "../constants";
 
 const init = {};
 
