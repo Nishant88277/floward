@@ -1,6 +1,6 @@
 import {all, put, takeLatest} from "redux-saga/effects";
 import axios from "axios";
-import {LISTING} from "../Constants";
+import {LISTING} from "../constants";
 import {listingFailure, listingSuccess} from "../actions/listingAction";
 
 function* listingRequest() {

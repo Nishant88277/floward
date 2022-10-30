@@ -1,6 +1,6 @@
 import {all, put, takeLatest} from "redux-saga/effects";
 import axios from "axios";
-import {LOGIN} from "../Constants";
+import {LOGIN} from "../constants";
 import {loginFailure, loginSuccess} from "../actions/LoginAction";
 
 function* loginRequest(actions) {
